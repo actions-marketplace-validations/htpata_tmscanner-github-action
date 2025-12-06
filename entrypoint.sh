@@ -13,8 +13,7 @@ if [[ -z "${TM_TOKEN}" ]]; then
   exit 1
 fi
 
-cd /app
-
+# cd /app
 echo "$(ls -la)"
 
-python tm_analyze.py ${1} ${2} ${3}
+python /app/tm_analyze.py ${1} ${2} ${3}
